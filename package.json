@@ -23,7 +23,8 @@
     "example": "DEBUG=pdf:* node ./bin/pdf-bot.js --config ./examples/pdf-bot.config.js",
     "example:receiving-api": "DEBUG=pdf:* node ./examples/receiving-api.js",
     "test": "nyc --reporter=lcov --reporter=text mocha test/*.test.js --recursive --coverage",
-    "test:watch": "mocha -w test/*.test.js --recursive"
+    "test:watch": "mocha -w test/*.test.js --recursive",
+    "startapi": "./bin/pdf-bot.js -c ./pdf-bot.config.js api"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
